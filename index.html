@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
+</head>
+<body>
+   <div class="container">
+<input id="a" type="text" placeholder="Проверьте IP-адрес">
+<button onclick="func()" type="button">Проверить</buttton>
+
+</div>
+
+
+
+<script>
+var a=document.getElementById('a');
+
+
+ function func () {
+if(/^(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]|[1-9][0-9])\.(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[0-9]|[1-9][0-9])\.(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[0-9]|[1-9][0-9])\.(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[0-9]|[1-9][0-9])$/.test(a.value)){
+alert("Верно");
+}
+else{
+alert("Не верно");
+}
+}
+</script>
+</body>
+</html>
